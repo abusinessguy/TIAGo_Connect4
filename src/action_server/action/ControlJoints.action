@@ -1,0 +1,19 @@
+# Request part (Goal)
+float64 torso_lift
+float64 arm_1
+float64 arm_2
+float64 arm_3
+float64 arm_4
+float64 arm_5
+float64 arm_6
+float64 arm_7
+float64 gripper_position  # 0.0 for open, 1.0 for close (or adjust as needed)
+
+---
+# Response part (Result)
+bool success
+
+---
+# Feedback (optional)
+# You can include feedback fields here if needed
+

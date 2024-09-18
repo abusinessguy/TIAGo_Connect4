@@ -1,0 +1,2 @@
+set(action_server_MESSAGE_FILES "msg/MoveToPoseAction.msg;msg/MoveToPoseActionGoal.msg;msg/MoveToPoseActionResult.msg;msg/MoveToPoseActionFeedback.msg;msg/MoveToPoseGoal.msg;msg/MoveToPoseResult.msg;msg/MoveToPoseFeedback.msg;msg/ControlJointsAction.msg;msg/ControlJointsActionGoal.msg;msg/ControlJointsActionResult.msg;msg/ControlJointsActionFeedback.msg;msg/ControlJointsGoal.msg;msg/ControlJointsResult.msg;msg/ControlJointsFeedback.msg")
+set(action_server_SERVICE_FILES "")

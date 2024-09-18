@@ -1,0 +1,2 @@
+action_server:aruco:aruco_detector:aruco_pick:board_detection:game_master:move_decision:my_tiago_tts:pick_piece:piece_place
+-DCATKIN_DEVEL_PREFIX=/uio/kant/ifi-ansatt-u02/calvint/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/uio/kant/ifi-ansatt-u02/calvint/catkin_ws/install -G Unix Makefiles

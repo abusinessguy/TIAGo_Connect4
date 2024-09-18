@@ -1,0 +1,8 @@
+prefix=/uio/kant/ifi-ansatt-u02/calvint/catkin_ws/devel
+
+Name: my_tiago_tts
+Description: Description of my_tiago_tts
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/uio/kant/ifi-ansatt-u02/calvint/catkin_ws/install
+
+Name: pupil_size_publisher
+Description: Description of pupil_size_publisher
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs

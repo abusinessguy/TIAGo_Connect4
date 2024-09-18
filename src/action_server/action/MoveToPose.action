@@ -1,0 +1,11 @@
+# Goal
+geometry_msgs/PoseStamped pose
+
+---
+# Result (optional)
+bool success
+
+---
+# Feedback (optional)
+float32 feedback
+

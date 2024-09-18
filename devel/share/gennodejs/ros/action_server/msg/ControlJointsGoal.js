@@ -1,0 +1,243 @@
+// Auto-generated. Do not edit!
+
+// (in-package action_server.msg)
+
+
+"use strict";
+
+const _serializer = _ros_msg_utils.Serialize;
+const _arraySerializer = _serializer.Array;
+const _deserializer = _ros_msg_utils.Deserialize;
+const _arrayDeserializer = _deserializer.Array;
+const _finder = _ros_msg_utils.Find;
+const _getByteLength = _ros_msg_utils.getByteLength;
+
+//-----------------------------------------------------------
+
+class ControlJointsGoal {
+  constructor(initObj={}) {
+    if (initObj === null) {
+      // initObj === null is a special case for deserialization where we don't initialize fields
+      this.torso_lift = null;
+      this.arm_1 = null;
+      this.arm_2 = null;
+      this.arm_3 = null;
+      this.arm_4 = null;
+      this.arm_5 = null;
+      this.arm_6 = null;
+      this.arm_7 = null;
+      this.gripper_position = null;
+    }
+    else {
+      if (initObj.hasOwnProperty('torso_lift')) {
+        this.torso_lift = initObj.torso_lift
+      }
+      else {
+        this.torso_lift = 0.0;
+      }
+      if (initObj.hasOwnProperty('arm_1')) {
+        this.arm_1 = initObj.arm_1
+      }
+      else {
+        this.arm_1 = 0.0;
+      }
+      if (initObj.hasOwnProperty('arm_2')) {
+        this.arm_2 = initObj.arm_2
+      }
+      else {
+        this.arm_2 = 0.0;
+      }
+      if (initObj.hasOwnProperty('arm_3')) {
+        this.arm_3 = initObj.arm_3
+      }
+      else {
+        this.arm_3 = 0.0;
+      }
+      if (initObj.hasOwnProperty('arm_4')) {
+        this.arm_4 = initObj.arm_4
+      }
+      else {
+        this.arm_4 = 0.0;
+      }
+      if (initObj.hasOwnProperty('arm_5')) {
+        this.arm_5 = initObj.arm_5
+      }
+      else {
+        this.arm_5 = 0.0;
+      }
+      if (initObj.hasOwnProperty('arm_6')) {
+        this.arm_6 = initObj.arm_6
+      }
+      else {
+        this.arm_6 = 0.0;
+      }
+      if (initObj.hasOwnProperty('arm_7')) {
+        this.arm_7 = initObj.arm_7
+      }
+      else {
+        this.arm_7 = 0.0;
+      }
+      if (initObj.hasOwnProperty('gripper_position')) {
+        this.gripper_position = initObj.gripper_position
+      }
+      else {
+        this.gripper_position = 0.0;
+      }
+    }
+  }
+
+  static serialize(obj, buffer, bufferOffset) {
+    // Serializes a message object of type ControlJointsGoal
+    // Serialize message field [torso_lift]
+    bufferOffset = _serializer.float64(obj.torso_lift, buffer, bufferOffset);
+    // Serialize message field [arm_1]
+    bufferOffset = _serializer.float64(obj.arm_1, buffer, bufferOffset);
+    // Serialize message field [arm_2]
+    bufferOffset = _serializer.float64(obj.arm_2, buffer, bufferOffset);
+    // Serialize message field [arm_3]
+    bufferOffset = _serializer.float64(obj.arm_3, buffer, bufferOffset);
+    // Serialize message field [arm_4]
+    bufferOffset = _serializer.float64(obj.arm_4, buffer, bufferOffset);
+    // Serialize message field [arm_5]
+    bufferOffset = _serializer.float64(obj.arm_5, buffer, bufferOffset);
+    // Serialize message field [arm_6]
+    bufferOffset = _serializer.float64(obj.arm_6, buffer, bufferOffset);
+    // Serialize message field [arm_7]
+    bufferOffset = _serializer.float64(obj.arm_7, buffer, bufferOffset);
+    // Serialize message field [gripper_position]
+    bufferOffset = _serializer.float64(obj.gripper_position, buffer, bufferOffset);
+    return bufferOffset;
+  }
+
+  static deserialize(buffer, bufferOffset=[0]) {
+    //deserializes a message object of type ControlJointsGoal
+    let len;
+    let data = new ControlJointsGoal(null);
+    // Deserialize message field [torso_lift]
+    data.torso_lift = _deserializer.float64(buffer, bufferOffset);
+    // Deserialize message field [arm_1]
+    data.arm_1 = _deserializer.float64(buffer, bufferOffset);
+    // Deserialize message field [arm_2]
+    data.arm_2 = _deserializer.float64(buffer, bufferOffset);
+    // Deserialize message field [arm_3]
+    data.arm_3 = _deserializer.float64(buffer, bufferOffset);
+    // Deserialize message field [arm_4]
+    data.arm_4 = _deserializer.float64(buffer, bufferOffset);
+    // Deserialize message field [arm_5]
+    data.arm_5 = _deserializer.float64(buffer, bufferOffset);
+    // Deserialize message field [arm_6]
+    data.arm_6 = _deserializer.float64(buffer, bufferOffset);
+    // Deserialize message field [arm_7]
+    data.arm_7 = _deserializer.float64(buffer, bufferOffset);
+    // Deserialize message field [gripper_position]
+    data.gripper_position = _deserializer.float64(buffer, bufferOffset);
+    return data;
+  }
+
+  static getMessageSize(object) {
+    return 72;
+  }
+
+  static datatype() {
+    // Returns string type for a message object
+    return 'action_server/ControlJointsGoal';
+  }
+
+  static md5sum() {
+    //Returns md5sum for a message object
+    return '330b6114482d9def04dc8ca1d950eb95';
+  }
+
+  static messageDefinition() {
+    // Returns full string definition for message
+    return `
+    # ====== DO NOT MODIFY! AUTOGENERATED FROM AN ACTION DEFINITION ======
+    # Request part (Goal)
+    float64 torso_lift
+    float64 arm_1
+    float64 arm_2
+    float64 arm_3
+    float64 arm_4
+    float64 arm_5
+    float64 arm_6
+    float64 arm_7
+    float64 gripper_position  # 0.0 for open, 1.0 for close (or adjust as needed)
+    
+    
+    `;
+  }
+
+  static Resolve(msg) {
+    // deep-construct a valid message object instance of whatever was passed in
+    if (typeof msg !== 'object' || msg === null) {
+      msg = {};
+    }
+    const resolved = new ControlJointsGoal(null);
+    if (msg.torso_lift !== undefined) {
+      resolved.torso_lift = msg.torso_lift;
+    }
+    else {
+      resolved.torso_lift = 0.0
+    }
+
+    if (msg.arm_1 !== undefined) {
+      resolved.arm_1 = msg.arm_1;
+    }
+    else {
+      resolved.arm_1 = 0.0
+    }
+
+    if (msg.arm_2 !== undefined) {
+      resolved.arm_2 = msg.arm_2;
+    }
+    else {
+      resolved.arm_2 = 0.0
+    }
+
+    if (msg.arm_3 !== undefined) {
+      resolved.arm_3 = msg.arm_3;
+    }
+    else {
+      resolved.arm_3 = 0.0
+    }
+
+    if (msg.arm_4 !== undefined) {
+      resolved.arm_4 = msg.arm_4;
+    }
+    else {
+      resolved.arm_4 = 0.0
+    }
+
+    if (msg.arm_5 !== undefined) {
+      resolved.arm_5 = msg.arm_5;
+    }
+    else {
+      resolved.arm_5 = 0.0
+    }
+
+    if (msg.arm_6 !== undefined) {
+      resolved.arm_6 = msg.arm_6;
+    }
+    else {
+      resolved.arm_6 = 0.0
+    }
+
+    if (msg.arm_7 !== undefined) {
+      resolved.arm_7 = msg.arm_7;
+    }
+    else {
+      resolved.arm_7 = 0.0
+    }
+
+    if (msg.gripper_position !== undefined) {
+      resolved.gripper_position = msg.gripper_position;
+    }
+    else {
+      resolved.gripper_position = 0.0
+    }
+
+    return resolved;
+    }
+};
+
+module.exports = ControlJointsGoal;

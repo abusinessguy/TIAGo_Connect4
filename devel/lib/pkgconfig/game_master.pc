@@ -1,0 +1,8 @@
+prefix=/uio/kant/ifi-ansatt-u02/calvint/catkin_ws/devel
+
+Name: game_master
+Description: Description of game_master
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
